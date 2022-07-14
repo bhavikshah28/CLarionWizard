@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+# Clarion 2.1.0.2447
+Project("{12B76EC0-1D7B-4FA7-A7D0-C524288B48A1}") = "ClarionMetroWizard", "ClarionMetroWizard.cwproj", "{9466F199-8928-471F-B6FB-70D295CE52BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{{2150E333-8FDC-42A3-9474-1A3956D46DE8}}"
+	ProjectSection(SolutionItems) = postProject
+		ClarionMetroWizard.app = ClarionMetroWizard.app
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Classes", "_Classes", "{46D75DC5-2C8B-467A-A622-DE229E133E4B}"
+	ProjectSection(SolutionItems) = postProject
+		_classes\ce_BaseWindowComponent.clw = _classes\ce_BaseWindowComponent.clw
+		_classes\ce_BaseWindowComponent.inc = _classes\ce_BaseWindowComponent.inc
+		_classes\ce_MetroWizardForm.clw = _classes\ce_MetroWizardForm.clw
+		_classes\ce_MetroWizardForm.inc = _classes\ce_MetroWizardForm.inc
+		_classes\ce_TabList.clw = _classes\ce_TabList.clw
+		_classes\ce_TabList.inc = _classes\ce_TabList.inc
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Scripts", "_Scripts", "{946C4B54-9458-43E9-90DA-5C54D1726B4C}"
+	ProjectSection(SolutionItems) = postProject
+		_scripts\make_docs.ps1 = _scripts\make_docs.ps1
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9466F199-8928-471F-B6FB-70D295CE52BF}.Debug|Win32.Build.0 = Debug|Win32
+		{9466F199-8928-471F-B6FB-70D295CE52BF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9466F199-8928-471F-B6FB-70D295CE52BF}.Release|Win32.Build.0 = Release|Win32
+		{9466F199-8928-471F-B6FB-70D295CE52BF}.Release|Win32.ActiveCfg = Release|Win32
+	EndGlobalSection
+EndGlobal

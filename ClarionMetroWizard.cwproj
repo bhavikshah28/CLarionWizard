@@ -1,0 +1,79 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{93B2E885-B49A-4F93-AD18-705A6AC929CE}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Win32</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ClarionMetroWizard</RootNamespace>
+    <AssemblyName>ClarionMetroWizard</AssemblyName>
+    <OutputName>ClarionMetroWizard</OutputName>
+    <CWOutputType>Exe</CWOutputType>
+    <DefineConstants>_ABCDllMode_=&gt;0%3b_ABCLinkMode_=&gt;1</DefineConstants>
+    <Model>Dll</Model>
+    <ApplicationIcon>resources\AppIcon.ico</ApplicationIcon>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <vid>full</vid>
+    <check_stack>True</check_stack>
+    <check_index>True</check_index>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <vid>off</vid>
+    <check_stack>False</check_stack>
+    <check_index>False</check_index>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ClarionMetroWizard.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="ClarionMetroWizard001.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="CLARIONMETROWIZARD_BC.CLW">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="ClarionMetroWizard_BC0.CLW">
+      <Generated>true</Generated>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="1.ico" />
+    <Library Include="10.ico" />
+    <Library Include="11.ico" />
+    <Library Include="12.ico" />
+    <Library Include="13.ico" />
+    <Library Include="14.ico" />
+    <Library Include="15.ico" />
+    <Library Include="16.ico" />
+    <Library Include="17.ico" />
+    <Library Include="18.ico" />
+    <Library Include="19.ico" />
+    <Library Include="2.ico" />
+    <Library Include="20.ico" />
+    <Library Include="21.ico" />
+    <Library Include="22.ico" />
+    <Library Include="23.ico" />
+    <Library Include="24.ico" />
+    <Library Include="25.ico" />
+    <Library Include="3.ico" />
+    <Library Include="4.ico" />
+    <Library Include="5.ico" />
+    <Library Include="6.ico" />
+    <Library Include="7.ico" />
+    <Library Include="8.ico" />
+    <Library Include="9.ico" />
+    <Library Include="AppIcon.ico" />
+    <Library Include="ClarionMetroWizard.EXE.manifest" />
+    <Library Include="out.ico" />
+    <Library Include="resources\AppIcon.ico" />
+  </ItemGroup>
+  <Import Project="$(ClarionBinPath)\SoftVelocity.Build.Clarion.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>powershell _scripts\make_docs.ps1</PostBuildEvent>
+  </PropertyGroup>
+</Project>
